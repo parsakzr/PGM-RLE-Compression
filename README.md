@@ -1,8 +1,36 @@
-# Parsa Kazerooni
+# PGM Compressor
 
+<hr>
+
+Tags: #YTU #Assignment #SemesterProject
+
+## Description
+
+A command line tool to compress, decompress, modify the PGM image files using Run Lenght Encoding approach.
+
+
+## Usage
+
+```bash
+PGMRLE [-edcph] [file]
 ```
-main.exe -e filename.pgm : encode .pgm to test_encoded.txt
-main.exe -d filename.txt : decode .txt to decoded.pgm
-main.exe -c filename.txt : change color
-main.exe -h filename.txt : histogram
+
+> -e : to Encode the file  
+-d : to Decode the file  
+-c : to change a Color  
+-p : to change a Pixel. // Incomplete  
+-h : to print the histogram of all colors
+
+
+Example
 ```
+$ PGMRLE -e input.pgm
+$ PGMRLE -d test_encoded.txt
+$ PGMRLE -c test_encoded.txt
+$ PGMRLE -h test_encoded.txt
+```
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
